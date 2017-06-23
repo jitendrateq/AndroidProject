@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teqforce.veritalabinsurance.NewUserEditRequest">
+    <LinearLayout
+        android:id="@+id/lnerlayt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/grdnt"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textViewRegType"
+            android:layout_width="match_parent"
+            android:background="#009a9a"
+
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.02"
+            android:fontFamily="sans-serif"
+            android:text="Edit Request"
+            android:textAlignment="center"
+            tools:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="30dp"
+            tools:textStyle="bold" />
+        <Button
+            android:id="@+id/btnVehicleDetails"
+            android:background="#009a9a"
+            android:text="Vehicle Details"
+            android:textColor="#d9e5f3"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:letterSpacing="0.2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnExteriorCondition"
+            android:background="#009a9a"
+            android:text="Exterior Condition"
+            android:textColor="#d9e5f3"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:letterSpacing="0.2"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="230dp"
+            android:layout_height="60dp" />
+        <Button
+            android:id="@+id/btnInteriorCondition"
+            android:background="#009a9a"
+            android:text="Interior Condition"
+            android:textColor="#d9e5f3"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:letterSpacing="0.2"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="230dp"
+            android:layout_height="60dp" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:text="Back"
+        android:background="#009a9a"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="270dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+
+        android:textColor="@android:color/white"
+        android:background="#009a9a"
+        android:textSize="16sp"/>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teqforce.veritalabinsurance.NewUserVehicleExteriorCondition">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/grdnt"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textViewAccountDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.00"
+            android:text="Vehicle Exterior Condition"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/white"
+            android:background="#009a9a"
+            tools:gravity="center_vertical"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="30dp"
+            tools:textStyle="normal" />
+        <TextView
+            android:id="@+id/line"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:paddingTop="5dip"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/connect_help"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/textViewVideoinfo"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.00"
+            android:text="Instructions on how to take video"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            tools:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <Button
+                android:id="@+id/btn_ReadInst"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.00"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white"
+                android:background="#009a9a"
+                android:text="Read Instructions" />
+            <Button
+                android:id="@+id/btn_SampleVideo"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.00"
+                android:layout_marginLeft="160dp"
+                android:textColor="@android:color/white"
+                android:background="#009a9a"
+                android:text="Sample Video" />
+            <Button
+                android:id="@+id/btn_LiveCall"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.00"
+                android:layout_marginLeft="270dp"
+                android:textColor="@android:color/white"
+                android:background="#009a9a"
+                android:text="Live Call Support" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_StartVideo"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.00"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:textColor="@android:color/white"
+            android:background="#009a9a"
+            android:text="Start Video" />
+    </LinearLayout>
+
+
+</RelativeLayout>

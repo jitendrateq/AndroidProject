@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teqforce.veritalabinsurance.VerifyNewUserOTP">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/grdnt"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textViewAccountDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.00"
+            android:text="Verify Mobile No"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/white"
+            android:background="#009a9a"
+            tools:gravity="center_vertical"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="30dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/pswd"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/input_OTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter 6 digit OTP"
+                android:textColorHint="#d9e5f3"
+                android:layout_marginLeft="15dp"
+                android:background="#00000000"
+                android:letterSpacing="0.1"
+                android:textSize="16dp"
+                android:layout_marginTop="28dp"
+                android:inputType="text"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4a5a71"></LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:text="Back"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/white"
+        android:background="#009a9a"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_Verify"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="250dp"
+        android:layout_alignParentBottom="true"
+        android:text="Verify"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:background="#009a9a"
+        android:textSize="16sp"/>
+</RelativeLayout>

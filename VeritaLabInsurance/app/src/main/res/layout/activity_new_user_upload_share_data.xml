@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teqforce.veritalabinsurance.NewUserUploadShareData">
+    <LinearLayout
+        android:id="@+id/lnerlayt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/grdnt"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textViewRegType"
+            android:layout_width="match_parent"
+            android:background="#009a9a"
+
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.02"
+            android:fontFamily="sans-serif"
+            android:text="Options for sending data"
+            android:textAlignment="center"
+            tools:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="30dp"
+            tools:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/line"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/connect_help"
+            android:background="#000"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dip" />
+
+
+        <Button
+            android:id="@+id/btnSharethroughWhatspp"
+            android:background="#009a9a"
+            android:text="Share through Whatspp "
+            android:textColor="#d9e5f3"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginBottom="50dp"
+            android:letterSpacing="0.2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_width="270dp"
+            android:layout_height="160dp"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnExistingUser"
+            android:background="#009a9a"
+            android:text="Direct upload"
+            android:textColor="#d9e5f3"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:letterSpacing="0.2"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="270dp"
+            android:layout_height="160dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

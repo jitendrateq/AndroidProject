@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teqforce.veritalabinsurance.NewUserVehicleDetails">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/grdnt"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textViewAccountDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.00"
+            android:text="Enter Vehicle Details"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/white"
+            android:background="#009a9a"
+            tools:gravity="center_vertical"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="30dp"
+            />
+        <TextView
+            android:id="@+id/line"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:paddingTop="5dip"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/connect_help"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/txtregno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="42dp"
+                android:text="Registration No"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittxtreqno"
+                android:layout_width="160dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@+id/txtregno"
+                android:backgroundTint="@android:color/white"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_constraintBaseline_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <ImageButton
+                android:id="@+id/imageButton_RC"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+
+                android:layout_toRightOf="@+id/edittxtreqno"
+                android:src="@drawable/u3" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/txtUploadmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="italic" />
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/txtmanfac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="28dp"
+                android:text="Manufacturer"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/manu_spinner"
+                android:layout_height="42dp"
+                android:layout_width="190dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="34dp"
+                android:backgroundTint="@android:color/white"
+                android:layout_toRightOf="@+id/txtmanfac" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/txtmodel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="28dp"
+                android:text="Model and Varient"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/profile_spinner"
+                android:layout_height="48dp"
+                android:layout_width="190dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="42dp"
+                android:backgroundTint="@android:color/white"
+                android:layout_toRightOf="@+id/txtmodel" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/txtpolicyno"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="48dp"
+                android:text="Previous Policy No"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittextprevpol"
+                android:layout_width="160dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="41dp"
+                android:layout_toRightOf="@+id/txtpolicyno"
+                android:backgroundTint="@android:color/white"
+                android:ems="10"
+                android:textColor="@android:color/white"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_constraintBaseline_creator="1"
+                tools:layout_constraintRight_creator="1" />
+            <ImageButton
+                android:id="@+id/imageButton_PN"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+
+                android:layout_toRightOf="@+id/edittextprevpol"
+                android:src="@drawable/u3" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/txtUploadPolicymsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="italic" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:text="Back"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/white"
+        android:background="#009a9a"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_proceed"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="260dp"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:text="Proceed"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:background="#009a9a"
+        android:textSize="16sp" />
+</RelativeLayout>

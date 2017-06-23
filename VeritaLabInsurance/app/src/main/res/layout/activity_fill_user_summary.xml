@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teqforce.veritalabinsurance.FillUserSummary">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/grdnt"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textViewAccountDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.00"
+            android:text="Summary"
+            android:textColor="@android:color/white"
+            android:background="#009a9a"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+
+            tools:gravity="center_vertical"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="30dp"
+            tools:textStyle="normal" />
+        <TextView
+            android:id="@+id/line"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:paddingTop="5dip"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/connect_help"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/txtusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="42dp"
+                android:text="Registration No"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                />
+            <EditText
+                android:id="@+id/editusername"
+                android:layout_width="152dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="26dp"
+                android:layout_toRightOf="@+id/txtusername"
+                android:ems="10"
+                android:backgroundTint="@android:color/white"
+                android:inputType="textPersonName"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_constraintBaseline_creator="1"
+                tools:layout_constraintRight_creator="1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:background="#009a9a"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_Verify"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:background="#009a9a"
+        android:layout_marginLeft="250dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">VeritaLabInsurance</string>
+    <string name="help_points1">Place phone in landscape position (check photo)</string>
+    <string name="help_points2">Open car bonnet</string>
+    <string name="help_points3">Identify area where engine/chassis no is written</string>
+</resources>

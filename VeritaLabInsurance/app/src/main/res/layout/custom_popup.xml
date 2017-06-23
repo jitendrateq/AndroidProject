@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Incomplete details"
+        android:textAlignment="center"
+        android:textColor="#104F1A"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#104F1A"
+        android:layout_marginTop="19dp"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCustomPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="#104F1A"
+        android:textSize="20dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:id="@+id/ib_close"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:padding="16dp"
+        android:text="ok"
+        android:textColor="#d9e5f3"
+        android:textSize="18dp" />
+</LinearLayout>
